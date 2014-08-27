@@ -10,6 +10,9 @@ tagline: design, develop
    
 ## Posts
 
+How can this be a serious programming blog?
+Can I actually learn this way?
+
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
