@@ -34,3 +34,129 @@ It can be easily reused by different types of applications, libraries.
 +   It supports localization of error messages with TranslateArgs.
 +   It deploys as AMD, CommonJS or plain script module pattern.
 +   It offers basic build-in constrains validators. Other custom validators can be find in extensible repository of custom validators (work in progress).
+
+
+
+## Example Usage
+``` typescript
+module Hobbies {
+
+    /**
+     * Data structure for generic invoice.
+     */
+    export interface IHobbiesData {
+
+        /**
+         * Person identification
+         */
+        Person?:Shared.IPerson
+
+        /**
+         *  The things you enjoy doing.
+         */
+        Hobbies?:Array<IHobby>;
+    }
+
+
+    /**
+     * The things you enjoy doing.
+     */
+    export interface IHobby
+    {
+        /**
+         * Description of your hobby.
+         */
+        HobbyName?:string;
+
+        /**
+         * How often do you participate in this hobby.
+         */
+        Frequency?:HobbyFrequency;
+
+        /**
+         * Return true if this is a paid hobby, otherwise false.
+         */
+        Paid?:boolean;
+
+
+        /**
+         * Return true if you would recommend this hobby to a friend, otherwise false.
+         */
+        Recommedation?:boolean;
+
+    }
+
+    /**
+     * How often do you participate in this hobby.
+     */
+    export enum HobbyFrequency {
+        Daily, Weekly, Monthly
+
+    }
+}
+```
+
+To define business rules for some object, you have to create abstract validator.
+``` js
+          //create new validator for object with structure<IPerson>
+          var personValidator = new Validation.AbstractValidator();
+
+          //basic validators
+          var required = new Validators.RequiredValidator();
+          var maxLength = new Validators.MaxLengthValidator(15);
+
+          //assigned validators to property
+          personValidator.RuleFor("FirstName", required);
+          personValidator.RuleFor("FirstName",maxLength);
+
+          //assigned validators to property
+          personValidator.RuleFor("LastName", required);
+          personValidator.RuleFor("LastName",maxLength);
+
+```
+
+To use business rules and execute them on particular data
+```js
+          //create test data
+          var data = {
+                Person1:
+                {
+                    FirstName:'John',
+                    LastName: 'Smith'
+                },
+                Person2:{}
+
+          }
+
+          //create concrete rule
+          var person1Validator = personValidator.CreateRule("Person 1");
+
+          //execute validation
+          var result = person1Validator.Validate(this.Data.Person1);
+
+          //verify results
+          if (result.HasErrors){
+              console.log(result.ErrorMessage);
+          }
+          //---------
+          //--outputs
+          //---------
+
+          //create concrete rule
+          var person2Validator = personValidator.CreateRule("Person 2");
+
+          //execute validation
+          var result = person2Validator.Validate(this.Data.Person1);
+
+           //verify results
+          if (result.HasErrors){
+              console.log(result.ErrorMessage);
+          }
+
+          //---------
+          //--outputs
+          //---------
+          // FirstName: Field is required.
+          // LastName: Field is required.
+
+```
