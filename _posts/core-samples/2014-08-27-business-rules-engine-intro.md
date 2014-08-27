@@ -1,24 +1,24 @@
 ---
 layout: post
 category : lessons
-tagline: "Business rules engine introduction"
+tagline: "Business rules engine"
 tags : [intro, beginner, business rules, tutorial, validation, form]
 ---
 {% include JB/setup %}
 
 # Business rules engine
 
-![logo](https://github.com/rsamec/form/blob/master/form_logo.jpg)
+![logo]({{site.url}}/assets/images/form_logo.jpg)
 
 Business rules engine is a lightweight JavaScript library for easy business rules definition of the product, the contract, the form etc.
 
-+ [Business rules engine - Tutorial] (https://github.com/rsamec/business-rules-engine/wiki)
-+ [Business rules engine - API] (http://rsamec.github.io/business-rules-engine/docs/globals.html)
-+ [Business rules repository - sources] (https://github.com/rsamec/business-rules)
-+ [Business rules repository - API] (http://rsamec.github.io/business-rules/docs/globals.html)
-+ [NodeJS Example] (https://github.com/rsamec/node-form-app)
-+ [AngularJS Example] (https://github.com/rsamec/angular-form-app)
-+ [AngularJS Demo] (http://nodejs-formvalidation.rhcloud.com/)
++ [Business rules engine - Tutorial](https://github.com/rsamec/business-rules-engine/wiki)
++ [Business rules engine - API](http://rsamec.github.io/business-rules-engine/docs/globals.html)
++ [Business rules repository - sources](https://github.com/rsamec/business-rules)
++ [Business rules repository - API](http://rsamec.github.io/business-rules/docs/globals.html)
++ [NodeJS Example](https://github.com/rsamec/node-form-app)
++ [AngularJS Example](https://github.com/rsamec/angular-form-app)
++ [AngularJS Demo](http://nodejs-formvalidation.rhcloud.com/)
 
 ## Key features
 The main benefit is that business rules engine is not tight to HTML DOM or any other UI framework.
@@ -38,8 +38,7 @@ It can be easily reused by different types of applications, libraries.
 
 
 ## Example Usage
-``` typescript
-module Hobbies {
+{% highlight js %}
 
     /**
      * Data structure for generic invoice.
@@ -93,11 +92,10 @@ module Hobbies {
         Daily, Weekly, Monthly
 
     }
-}
-```
+{% endhighlight %}
 
 To define business rules for some object, you have to create abstract validator.
-``` js
+{% highlight js %}
           //create new validator for object with structure<IPerson>
           var personValidator = new Validation.AbstractValidator();
 
@@ -113,10 +111,10 @@ To define business rules for some object, you have to create abstract validator.
           personValidator.RuleFor("LastName", required);
           personValidator.RuleFor("LastName",maxLength);
 
-```
+{% endhighlight %}
 
 To use business rules and execute them on particular data
-```js
+{% highlight javascript %}
           //create test data
           var data = {
                 Person1:
@@ -159,4 +157,4 @@ To use business rules and execute them on particular data
           // FirstName: Field is required.
           // LastName: Field is required.
 
-```
+{% endhighlight %}
