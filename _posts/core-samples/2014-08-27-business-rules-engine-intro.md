@@ -237,5 +237,5 @@ You can assign some constraints (required,maxlength,email, etc.) to properties o
  
 <div class="alert alert-success" role="alert">Well done - your hobbies business rules are done.</div>
 
-Look at the [API documentation](http://rsamec.github.io/business-rules/docs/modules/hobbies.html)
+Look at the [API documentation](http://rsamec.github.io/business-rules/docs/modules/hobbies.html).
 
