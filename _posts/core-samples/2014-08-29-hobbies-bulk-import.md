@@ -8,7 +8,7 @@ tags : [intro, beginner, business rules, tutorial, validation, form]
 
 # Use hobbies business rules
 
-In [last post]({% post_url 2014-08-27-business-rules-engine-intro %}) hobbies business rules were created. 
+In [last post]({% post_url core-samples/2014-08-27-business-rules-engine-intro %}) hobbies business rules were created. 
 You can see hobbies business rules documentation + npm package.
 
 +   [API](http://rsamec.github.io/business-rules/docs/modules/hobbies.html)
