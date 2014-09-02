@@ -123,5 +123,3 @@ _.each(employees, function(employee){
 {% endhighlight %}
 
 <div class="alert alert-success" role="alert">Well done.You have just finished your task.</div> 
-
-You can find wor
