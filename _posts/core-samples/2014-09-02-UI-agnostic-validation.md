@@ -154,12 +154,13 @@ uiControls.directive('error', function ($translate) {
 {% endhighlight %}
 
 See it in action 
+
    + [Vacation Request form](http://nodejs-formvalidation.rhcloud.com/#/vacationApproval/new)
    + [Hobbies form](http://nodejs-formvalidation.rhcloud.com/#/hobbies/new)
 
 <div class="alert alert-success" role="alert">Well done. If you want to know more, see resources below.</div>
 
-## Useful information
+## UI agnostic validation framework - more information
 
 + [Business rules engine - Tutorial](https://github.com/rsamec/business-rules-engine/wiki)
 + [Business rules engine - API](http://rsamec.github.io/business-rules-engine/docs/globals.html)
