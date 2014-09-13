@@ -43,7 +43,7 @@ It can be easily reused by different types of applications, libraries.
 
 <div class="alert alert-danger" role="alert">Computers are for humans. Each application needs some UI.</div>
 
-## How to bind validations and error messages to UI
+## How to bind validations and error messages to UI (AngularJs framework)
 
 <div class="alert alert-info" role="alert">Separation of concern. Distinguish between UI and non-UI factors.</div>
 
@@ -153,7 +153,10 @@ uiControls.directive('error', function ($translate) {
 });
 {% endhighlight %}
 
- 
+See it in action 
+   + [Vacation Request form](http://nodejs-formvalidation.rhcloud.com/#/vacationApproval/new)
+   + [Hobbies form](http://nodejs-formvalidation.rhcloud.com/#/hobbies/new)
+
 <div class="alert alert-success" role="alert">Well done. If you want to know more, see resources below.</div>
 
 ## Useful information
