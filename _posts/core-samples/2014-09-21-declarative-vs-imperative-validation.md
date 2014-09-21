@@ -291,6 +291,7 @@ Optional for typescript you can define data structure to ensure strong-type supp
 ## Going deep
 
 To add declarative support in [business rules engine](https://github.com/rsamec/business-rules-engine) i use [validation API](http://rsamec.github.io/business-rules-engine/docs/modules/validation-validation.validation.html).
+I share common validators for [basic build-in constrains](http://rsamec.github.io/business-rules-engine/docs/modules/validation-basicvalidators.validators.html).
 
 I write one factory for each syntax
 
@@ -652,9 +653,9 @@ If you have your own definition of validation rules (xml, html) you can write yo
 
 I am not a big fan of declarative validation. It works really nice for simple example, but for real-world examples problems start to encounter.
 There are a lot of small, tiny details to address that are not possible to express in declarative way.
-There is always many exception against typical scenario that declarative syntax is designed to.
-The reuse of declarative validation rule is limited. When i am using declarative representation i feel i have not so power in my hands.
+There is always many exception against typical scenario. This exceptional business rule scenario is typically not covered by declarative syntax that is restrictive by its nature.
+It is difficult to describe a lot of possibilities that can be found in business in real world.
+The reuse of declarative validation rule is also limited.
 
-
-<div class="alert alert-info" role="alert">What do you prefer declarative or imperative approach to validation rules definition.</div>
-
+<div class="alert alert-info" role="alert">Using declarative approach I feel not to have so power in my hands. What do you prefer declarative or imperative approach to validation rules definition?</div>
+ 
