@@ -37,11 +37,11 @@ Maybe there is a **majority of programmers working on businesses that has nothin
 
 Why is not the regular business user able to create such an application itself? 
 
-<div class="alert alert-info" role="success">I think we live not in ideal world, where typical standards solutions are not usable.</div>
+<div class="alert alert-info" role="success">I think we live not in ideal world, where typical standards solutions are usable.</div>
 The huge number of clients have some proprietary (user identification, data formats, installation, non-standard key strokes, old browsers, old platforms).
 
 <div class="alert alert-info" role="success">I think we live in the strange world, where the biggest problem is the huge number of tiny details.</div>
-There are always so many technical, business, GUIs details (permanent and temporary address has different structure and different business rules, person titles are in one view enter in textbox, in second view selected from lists, in third view combined with typeahaed).   
+There are always so many technical, business, GUIs details (permanent and temporary address has different structure and different business rules, person titles are in one view enter in textbox, in second view selected from lists, in third view combined with typeahaed, etc.).   
 
 It is web components revolution or the new SPAs frameworks (Angular,Backbone, Knockout, Ember, etc.) are the solution that brings us to the goal. 
 
@@ -538,7 +538,7 @@ Now we have validations functionality for the form. When you click on green save
 
 ![hobbies form step 4]({{site.url}}/assets/images/polymer_hobbie_form_step4.jpg)
 
-## Step 5: Add list of hobbies -> demo for using collection-based structures
+## Step 5: Add list of hobbies -> using collection-based structures
 
 +   add UI - using [clever-core-list](http://rsamec.github.io/clever-core-list/components/clever-core-list/) - see below
 +   look at data and rules binding for [clever-core-list](http://rsamec.github.io/clever-core-list/components/clever-core-list/)
