@@ -18,6 +18,8 @@ In this tutorial, I'll build a small interactive form.
 
 I follow web components revolution and use google [polymer framework](https://www.polymer-project.org) to build this form.
 
+## Programmers replaced by business users
+
 I would like to open one question also.  Will **business user** replace programmers building typical line of business application?
 There is a huge number of applications developed by programmers that are just **GUIs with some validation rules that updates DB**.
 
@@ -43,6 +45,8 @@ There are always so many technical, business, GUIs details (permanent and tempor
 
 It is web components revolution or the new SPAs frameworks (Angular,Backbone, Knockout, Ember, etc.) are the solution that brings us to the goal. 
 
+## Architecture for demo form application
+ 
 The main goals when designing the form are these:
 
 +   use **flexible architecture** that separates data from UI, rules from processes, from tasks, etc.
@@ -76,6 +80,7 @@ What components we use
 +   use json data as raw json with no plumbing (extends, observables, etc.)
 +   use [polymer binding](https://www.polymer-project.org/docs/polymer/databinding.html) to connect these three components together 
 
+## Basic steps for implementation
 
 Let's start. Out basic steps are
 
