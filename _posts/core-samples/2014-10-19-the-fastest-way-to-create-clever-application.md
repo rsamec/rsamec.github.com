@@ -10,10 +10,11 @@ tags : [beginner, business rules, tutorial, validation, form]
   ![logo]({{site.url}}/assets/images/polymer_hobbie_form.jpg)
 </div>
 
-In this tutorial, I'll build a small interactive form. You can see the end result on the right.
+In this tutorial, I'll build a small interactive form.
 
-You can show the [demo](http://polymer-formvalidation.rhcloud.com/).
-You can see the [sources](https://github.com/rsamec/clever-form-demo).
++   You can see the end result on the right.
++   You can play with the [demo](http://polymer-formvalidation.rhcloud.com/).
++   You can browse the [sources](https://github.com/rsamec/clever-form-demo).
 
 I follow web components revolution and use google [polymer framework](https://www.polymer-project.org) to build this form.
 
