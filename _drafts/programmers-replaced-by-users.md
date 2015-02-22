@@ -39,3 +39,19 @@ The typical user don't know markup languages, it will be not able to use web com
 I think it is a great news for people people working in industries
 
 This shift is good for companies (no in house programmers needed), but i think it is good also for programmers (they can concentrate on "real" software).
+
+
+## Example:
+We need model TextField to capture user input.
+
+TextField component:
+
++   model
+    +   user typed value
+    +   validation error
+
+Is this a mutable state?
+would any other component of your app other than the text field want to know that the value user entered?
+would any other component of your app other than the text field want to know that the user typed value is valid?
+
+If yes, then it should be props, otherwise it is mutable state.
