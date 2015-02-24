@@ -240,7 +240,7 @@ Summary for __one-way binding to error messages__ - using __error__ property for
 ### 3.2. [react-bootstrap][reactBootstrap]
 
 <iframe style="border: 1px solid #999;width: 100%; height: 350px"
-        src="http://embed.plnkr.co/7tumC62YO8GixKEMhJcw" frameborder="0"
+        src="http://embed.plnkr.co/6hoCCd7Bl1PHnb57rQbT/preview" frameborder="0"
         allowfullscreen="allowfullscreen">
   Loading plunk...
 </iframe>
